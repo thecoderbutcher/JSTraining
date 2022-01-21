@@ -1,0 +1,27 @@
+.calc-container{
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+.calc-container .display {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+}
+.calc-container .numbers{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
