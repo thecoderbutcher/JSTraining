@@ -1,0 +1,15 @@
+doctype html 
+html 
+    head 
+        title #{title}
+        meta(charset='utf-8')
+    
+    body
+        main
+            h1  #{message} 
+            ul 
+                each dog in dogs
+                    li 
+                        a(href="dog/" + dog.raza)  #{dog.raza}
+        footer 
+            p Copyright © 2019
