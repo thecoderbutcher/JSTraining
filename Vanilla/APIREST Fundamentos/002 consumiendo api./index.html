@@ -6,14 +6,22 @@
     <link rel="stylesheet" href="style.css">
     <title>Bored Activity</title>
 </head>
-<body>
-    <h1 class="activity-title"></h1>
-    <figure class="activity-card">
-        <img class="card-img" src="" alt="activity img" width="200px" >
-        <figcaption class="card-caption"></figcaption>
-    </figure>
-    <p class="activity-text"></p>
-    <button class="generate-btn">Generar Nuevo</button>
+<body class="container">
+    <h1 class="activity-title">Activities for you boring times</h1>
+    <section class="random-activity">
+        <h2>Random Activities</h2>
+        <figure class="activity-card">
+            <img class="card-img" src="" alt="activity img" width="200px" >
+            <figcaption class="card-caption"></figcaption>
+            <button>add favorite</button>
+        </figure>
+        <p class="activity-text"></p>
+        <button class="generate-btn">Generar Nuevo</button> 
+    </section>
+    <section class="favorite-activity">
+        <h2>Favorites Activities</h2>
+
+    </section>
     <script src="app.js"></script>
 </body>
 </html>
