@@ -7,6 +7,7 @@ const endpoints = {
 
 const cards = document.querySelectorAll('.card-cat img')
 const cardsBtn = document.querySelectorAll('.card-cat button')
+const delFav = document.querySelectorAll('.fav-cat button')
 const michifavourites = document.querySelector('.favorite-michi-container')
 
 const generateCards = async () => {
@@ -24,11 +25,22 @@ const getFavouritesMichis = async () => {
 
     data.map((element) => {
         if(response.status  === 200){
-            const fav = `<article><img src=${element.image.url} alt='michi'><button>Del Fav</button></article>`;
+            const fav = `<article class='fav-cat'><img src=${element.image.url} id=${element.image_id} alt='michi'><button>Del Fav</button></article>`;
             michifavourites.insertAdjacentHTML('beforeend',fav)
         } 
     })
 }
+
+delFav.forEach(button => {
+    button.addEventListener('click', async () => {
+        console.log("response.data")
+        const image = button.parentNode.querySelector('img')
+        const response = await fetch(endpoints.API_URL_FAVORITE+image.getAttribute('id'),{
+            method: 'DELETE'
+        })
+    })
+})
+
 
 cardsBtn.forEach(button => {
     button.addEventListener('click', async () =>{
