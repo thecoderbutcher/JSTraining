@@ -2,3 +2,10 @@ body{
     background-color: aliceblue;
     text-align: center;
 }
+section{
+    display: flex;
+    flex-direction: column;
+}
+.random-michi article img, .favorite-michi-container article img{
+    width: 200px;
+}
