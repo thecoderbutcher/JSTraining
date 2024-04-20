@@ -42,11 +42,9 @@ const usersIndexado = users.reduce((acc, el) =>{
     return acc
 }, {}) 
 
-console.time('usando index')
 const conUserIndex = lista.map(elemento => {
     return {
         ...elemento,
         created_by_user: usersIndexado[elemento.created_by]
     }
 })
-console.timeEnd('usando index')

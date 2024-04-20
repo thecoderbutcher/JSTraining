@@ -1,0 +1,43 @@
+version: "3.9"
+services:
+  
+  server:
+    image: ${APP_NAME}-server
+    container_name: ${SERVER_HOST}
+    build: 
+      context: ./server
+      dockerfile: Dockerfile
+    env_file: .env
+    ports:
+      - ${SERVER_PORT}:${SERVER_PORT}
+    volumes:
+      - ./server:/server
+      - server-volume:/server/node_modules
+    depends_on:
+      database:
+        condition: service_healthy
+
+  database:
+    image: ${APP_NAME}-database
+    container_name: ${POSTGRES_HOST}
+    build: 
+      context: ./database
+      dockerfile: Dockerfile
+    env_file: .env
+    ports:
+      - ${POSTGRES_PORT}:${POSTGRES_PORT}
+    volumes:
+      - database-volume:/var/lib/postgresql/data
+    command: -p ${POSTGRES_PORT}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -p ${POSTGRES_PORT} -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      start_period: 0s
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  server-volume:
+    name: "server-volume"
+  database-volume:
+    name: "database-volume"
