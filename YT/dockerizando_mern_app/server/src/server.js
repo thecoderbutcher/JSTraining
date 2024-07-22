@@ -32,5 +32,5 @@ async function main(){
 }
 
 main()
-    .then(()=> console.log('server started'))
+    .then(()=> console.log('server starteds'))
     .catch(err => console.error('something went wrong', err));

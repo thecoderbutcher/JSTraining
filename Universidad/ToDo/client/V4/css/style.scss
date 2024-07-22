@@ -1,0 +1,147 @@
+/* Color scheme */
+$lightColor: #fff;
+$darkColor: #222;
+
+@mixin theme($bgColor, $fontColor, $opacity) {
+    background-color: $bgColor;
+    color: $fontColor;
+    opacity: $opacity;
+}  
+
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    display: flex; 
+    flex-direction: column; 
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: auto;
+    max-width: 640px;
+    width:100%;
+    & header{
+        align-items: center;
+        align-self: center;
+        display:flex;
+        justify-content: center;
+        flex-direction: row;    
+        max-width: 640px;
+        width:100%;
+        & h1{
+            flex-grow: 1;
+            font-size: 36px;
+        }
+    }
+    & main{ 
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        max-width: 640px;
+        width:100%;
+    }
+    & #task-form{
+        display: flex;
+        padding: 8px;
+        & input[type=text] {
+            margin-right: 8px;
+        }
+    }
+    & button{
+        margin-left: 8px;
+        padding: 8px;
+    }
+
+    & .task-item{
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        .checkbox{
+            font-size:48px;
+            cursor: pointer;
+        }
+        & input[type=checkbox]{
+            display: none;
+        }
+        & .task-text{
+            flex-grow: 1;
+            padding: 8px;
+            font-size: 24px;
+            &:focus{
+                padding: 4px;
+            }
+        }
+    }
+
+    & input[type=text]{
+        font-size: 24px;
+        height:48px;
+        flex-grow: 1;
+        padding: 8px;
+        border: none;
+    }
+    & .buttom{
+        font-size: 24px;
+        height:48px;
+        padding: 8px;
+    }
+}
+
+.light{
+    @include theme($lightColor,$darkColor, .5);
+
+    & .buttom{
+        @include theme($lightColor, $darkColor, 1);
+       
+    }
+    & input[type=text]{
+        @include theme($lightColor, $darkColor, 1);
+    }
+    & button{
+        @include theme($lightColor, $darkColor, 1);
+    }
+}
+
+.dark{
+    @include theme($darkColor, $lightColor, 1);
+
+    & .buttom{
+        @include theme($darkColor, $lightColor, 1);
+    }
+    & input[type=text]{
+        @include theme($darkColor, $lightColor, 1);
+    }
+    & button{
+        @include theme($darkColor, $lightColor, 1);
+    }
+}
+
+input:checked + span{
+    text-decoration: line-through;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

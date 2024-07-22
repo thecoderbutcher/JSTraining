@@ -1,0 +1,54 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;;
+}
+h1{
+    text-align: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, 500px);
+    justify-content: center;
+    align-content: flex-start; 
+}
+  
+.task {
+    background: rgb(241, 240, 240);
+    border: 1px solid rgb(148, 148, 148);  
+    margin-top: 10px;
+    padding: 10px;    
+} 
+
+.task:first-child{
+    text-align: center;
+}
+.task a{
+    float: right;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.task button{
+    margin-left: 15px;
+}
+.task{
+    overflow: block;
+    display: block;
+    Text-overflow:ellipsis;
+}
+input[type=text] {
+    height: 24px;
+    padding: 4px;
+    width: 88%;
+}
+
+button {
+    height: 36px;
+    padding: 5px;
+} 
+
+a{
+    text-decoration: none;
+}
+
+input:checked + span{
+    text-decoration: line-through;
+}

@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Facon';
+    src: url('../fonts/facon/Facon.eot');
+    src: url('../fonts/facon/Facon.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/facon/Facon.woff2') format('woff2'),
+         url('../fonts/facon/Facon.woff') format('woff'),
+         url('../fonts/facon/Facon.ttf') format('truetype'),
+         url('../fonts/facon/Facon.svg#Facon') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Mohave';
+    src: url('../fonts/mohave/Mohave-Regular.eot');
+    src: url('../fonts/mohave/Mohave-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mohave/Mohave-Regular.woff2') format('woff2'),
+         url('../fonts/mohave/Mohave-Regular.woff') format('woff'),
+         url('../fonts/mohave/Mohave-Regular.ttf') format('truetype'),
+         url('../fonts/mohave/Mohave-Regular.svg#Mohave-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

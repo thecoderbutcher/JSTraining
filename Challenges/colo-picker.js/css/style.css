@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+h2{
+    text-align: center;
+}
+
+
+.output{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid rgb(122, 122, 122);
+    margin: 1rem 35%;
+    height: 8rem;
+    width: 30%;
+}
+
+.color-div{
+    text-align: center;
+}

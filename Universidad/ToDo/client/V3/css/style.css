@@ -1,0 +1,186 @@
+/* Color scheme */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: auto;
+  max-width: 640px;
+  width: 100%;
+}
+
+.container header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 640px;
+  width: 100%;
+}
+
+.container header h1 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 36px;
+}
+
+.container main {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 640px;
+  width: 100%;
+}
+
+.container #task-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px;
+}
+
+.container #task-form input[type=text] {
+  margin-right: 8px;
+}
+
+.container button {
+  margin-left: 8px;
+  padding: 8px;
+}
+
+.container .task-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px;
+}
+
+.container .task-item .checkbox {
+  font-size: 48px;
+  cursor: pointer;
+}
+
+.container .task-item input[type=checkbox] {
+  display: none;
+}
+
+.container .task-item .task-text {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 8px;
+  font-size: 24px;
+}
+
+.container .task-item .task-text:focus {
+  padding: 4px;
+}
+
+.container input[type=text] {
+  font-size: 24px;
+  height: 48px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 8px;
+  border: none;
+}
+
+.container .buttom {
+  font-size: 24px;
+  height: 48px;
+  padding: 8px;
+}
+
+.light {
+  background-color: #fff;
+  color: #222;
+  opacity: 0.5;
+}
+
+.light .buttom {
+  background-color: #fff;
+  color: #222;
+  opacity: 1;
+}
+
+.light input[type=text] {
+  background-color: #fff;
+  color: #222;
+  opacity: 1;
+}
+
+.light button {
+  background-color: #fff;
+  color: #222;
+  opacity: 1;
+}
+
+.dark {
+  background-color: #222;
+  color: #fff;
+  opacity: 1;
+}
+
+.dark .buttom {
+  background-color: #222;
+  color: #fff;
+  opacity: 1;
+}
+
+.dark input[type=text] {
+  background-color: #222;
+  color: #fff;
+  opacity: 1;
+}
+
+.dark button {
+  background-color: #222;
+  color: #fff;
+  opacity: 1;
+}
+
+input:checked + span {
+  text-decoration: line-through;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*# sourceMappingURL=style.css.map */

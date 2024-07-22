@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <title>ToDo List</title>
+    </head>
+    <body class="container">
+        <header>
+            <h1>ToDo List v1</h1>
+            <button class="buttom material-icons" id="task-fullscreem">fullscreen</button>
+            <button class="buttom material-icons" id="theme-switch">toggle_off</button>
+        </header>
+        <main>
+            <section class="task-add">
+                <form id="task-form">
+                    <input type="text" name="task-name" id="task-form-input-name" placeholder="Ingresar nueva tarea" autocomplete="off">
+                    <input type="submit" id="task-form-button" class="buttom material-icons" value="check">
+                </form>
+            </section>
+            <h2 id="without-task">No hay tareas pendientes</h2>
+        </main>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="js/Task.js"></script>
+    </body>
+</html>

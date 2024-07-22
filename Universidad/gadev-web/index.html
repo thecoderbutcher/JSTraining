@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>GADEV</title>
+		<!--
+			I load stylesheet documents
+		-->
+		<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<!--
+			Navs and menu section
+		-->
+		<header>
+			<div id="header-content">
+				<div id="header-logo">
+					<a href="#">
+						<img src="images/icons/logo.png" title="logo">
+						<span>GADEV</span>
+					</a>
+				</div>
+			</div>
+			<nav id="menu">
+				<ul>
+					<li id="li-home"> <a href="#">Home</a></li>
+					<li id="li-galery"><a href="#">Galery</a></li>
+					<li id="li-news"><a href="#">News</a></li>
+					<li id="li-contact"><a href="#">Contact us</a></li>
+					<li id="li-aboutus"><a href="#">About Us</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="content">
+			<!--
+				Section for home view
+			-->
+			<section id="home" class="active">
+				<article id="web">
+					<h3>WEB APPLICATION DEVELOPMENT SERVICES</h3>
+				</article>
+
+				<article id="web-information">
+					<div id="galery-text">
+						<h1>We are professionals</h1>
+						<span>We are experts in web development, we make our projects unique.</span>
+					</div>
+					<div class="web-content">
+						<img src="images/background/dev-image1.png">
+						<p>
+							We are a group of web designers focused on digital marketing and focused on web design. 
+							We specialize in the development of self-managing webs, mainly through the well-known WordPress platform. 
+						</p>
+					</div>
+					<div class="web-content">
+						<p id="second-p">
+							Virtual stores so you can expand the scope and schedule of your physical business.
+							Landing pages aimed at developing a customer database. Simple single page sites to have an online 
+							presence without the need to allocate an important budget.
+						</p>
+						<img id="second-img" src="images/background/dev-image2.png">
+					</div>
+				</article>
+			</section>
+
+			<!--
+				Section for galery view
+			-->
+			<section id="galery" style="display: none">
+				<article id="galery-content">
+					<div id="galery-text">
+						<h1>Recent works</h1>
+						<span>As experts in web development, we make our projects unique.</span>
+					</div>
+					
+					<div class="grid-galery"></div>
+				</article>
+			</section>
+
+			<!--
+				Section for news view
+			-->
+			<section id="news" style="display: none">
+				<article id="news-content">
+					<div id="galery-text">
+						<h1>Last news</h1>
+						<span>The latest news from the world of web development.</span>
+					</div>
+					<div class="news-recent"> 
+						<img src="images/news/news-1.jpg">
+						<div class="news-text">
+							<h3>Páginas profesionales que hablan por sí solas</h3>
+							<p>
+								<span class="material-icons">person</span>
+								<span>morinacho</span>
+								<span class="material-icons">query_builder</span>
+								<span>hoy</span>
+							</p>
+							<p>
+								Páginas profesionales que hablan por sí solas terminan siendo 
+								la mejor carátula de presentación para una empresa. En la mayoría de 
+								los casos una página profesional termina siendo  la cara visible de una empresa, 
+								es por ello que no sólo es importante tener una página web...
+							</p>
+						</div>
+						
+					</div>
+					<div class="news-recent">
+						<img src="images/news/news-2.jpg">
+						<div class="news-text">
+							<h3>¿Que es una página web AMP y como afecta al SEO?</h3>
+							<p>
+								<span class="material-icons">person</span>
+								<span>morinacho</span>
+								<span class="material-icons">query_builder</span>
+								<span>hoy</span>
+							</p>
+							<p>
+								Es momento de preguntarse que es AMP y cuanto afecta el SEO de una página 
+								web. Las siglas tienen como significado Accelerated Mobile Pages y se trata 
+								de un proyecto pensado para optimizar la velocidad de carga de un sitio web. 
+								Es una tecnología nueva que cada vez...
+							</p>
+						</div>
+					</div>
+					<div class="news-recent">
+						<img src="images/news/news-3.jpg">
+						<div class="news-text">
+							<h3>Potenciar una empresa con un sitio web o página web</h3>
+							<span class="material-icons">person</span>
+								<span>morinacho</span>
+								<span class="material-icons">query_builder</span>
+								<span>hoy</span>
+							<p>
+								Potenciar una empresa con un sitio web es elemental para mejorar su perfil 
+								digital y presencia en la web. Cuando se hace referencia a potenciar una 
+								empresa con una página web se refiere a una estrategia de marketing uniforme 
+								y no sólo a la web en sí. Existen diferentes tipos de páginas...
+						</p>
+						</div>
+					</div>
+				</article>
+			</section>
+
+			<!--
+				Section for contact view
+			-->
+			<section id="contact" style="display: none">
+				<article id="contact-content">
+					<div id="galery-text">
+						<h1>Contact us</h1>
+						<span>Our team of professionals will solve all your doubts.</span>
+					</div>
+					<form method="post" id="form-contact">
+						 <div class="form-group">
+							<label for="name"><label class="material-icons">person</label> Name</label><br>
+							<input class="nameinput" type="text" name="name" placeholder="Your name" required>
+							<i class="material-icons" id="name-valid" style="display: none"></i>
+						</div>
+						<div class="form-group">
+							<label for="mail"><label class="material-icons">mail</label> Email</label><br>
+							<input class="emailinput" type="email" name="mail" placeholder="example@mail.com" required>
+							<i class="material-icons" id="email-valid" style="display: none"></i>
+						</div>
+						<div class="form-group">
+							<label for="coments"><label class="material-icons">comment</label> Comments</label><br>
+							<textarea name="coments" placeholder="Ingrese sus comentarios o sugerencia"></textarea>
+						</div>	
+						<div class="form-group">
+							<input type="submit" name="enviar">
+						</div>			
+					</form>
+					<div id="galery-text">
+						<h1>Join us</h1>
+						<span>Join a specialized team to enhance your skills.</span>
+					</div>
+					<form method="post" id="form-join">
+						<div class="form-group">
+							<label for="name"><label class="material-icons">person</label> Name</label><br>
+							<input class="nameinput" type="text" name="name" placeholder="Your name" required>
+							<i class="material-icons" id="name-valid-cv" style="display: none"></i>
+						</div>
+						<div class="form-group">
+							<label for="mail"><label class="material-icons">mail</label> Email</label><br>
+							<input class="emailinput" type="email" name="mail" placeholder="example@mail.com" required>
+							<i class="material-icons" id="email-valid-cv" style="display: none"></i>
+						</div>
+						<div class="form-group">
+							<label for="coments"><label class="material-icons">work</label> Working Area</label><br>
+							<select name="" id="" required>
+								<option value="false" selected="" disabled=""> Select you area</option>
+								<option value="1">Web Design</option>
+								<option value="2">Web Development</option>
+								<option value="3">Graphic Design</option>
+								<option value="4">Data Base</option>
+								<option value="5">Software Development</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="cv-document"><label class="material-icons">description</label> Resume</label><br>
+							<input type="file" name="cv-document" id="cv-document">
+						</div>	
+						<div class="form-group">
+							<input type="submit" name="enviar">
+						</div>			
+					</form>
+				</article>
+			</section>
+
+			<!--
+				Section for aboutus view
+			-->
+			<section id="aboutus" style="display: none">
+				<article id="aboutus-content"> 
+					<div id="galery-text">
+						<h1>Know us</h1>
+						<span>Meet our team of professional experts</span>
+					</div>
+					<div id="our-team">
+						<div class="person">
+							<img src="images/people/profile.png">
+							<p>Ignacio Morinigo</p>
+						</div>
+						<div class="person">
+							<img src="images/people/profile1.png">
+							<p>Diego Seghezzo</p>
+						</div>
+						<div class="person">
+							<img src="images/people/profile2.png">
+							<p>Anna Chmurska</p>
+						</div>
+					</div>
+					<div id="galery-text">
+						<h1>Our inspiration</h1>
+						<span>Watch the video that inspired us</span>
+					</div>
+					<div id="inspiration">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/dU1xS07N-FA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</article>
+			</section>
+		</div>
+
+		<!--
+			footer content
+		-->
+		<footer>
+			<div id="footer-icons">
+				<a href=""><img src="images/icons/facebook.png" alt=""></a>
+				<a href=""><img src="images/icons/gorjeo.png" alt=""></a>
+				<a href=""><img src="images/icons/instagram.png" alt=""></a>
+				<a href=""><img src="images/icons/youtube.png" alt=""></a>
+				<a href=""><img src="images/icons/whatsapp.png" alt=""></a>
+				<a href=""><img src="images/icons/telegram.png" alt=""></a>
+			</div>
+			<div id="footer-information">
+				<ul>
+					<li><span class="material-icons">smartphone</span><span class="footer-li"> +54 2665 035694</span></li>
+					<li><span class="material-icons">email</span><span class="footer-li"> morinacho@gmail.com</span></li>
+					<li><span class="material-icons">room</span><span class="footer-li"> Villa Mercedes, San Luis</span></li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+
+	<!--
+		I load my js documents
+	-->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</html>
