@@ -1,0 +1,70 @@
+*{font-family: Arial, Helvetica, sans-serif;}
+table{
+    border-collapse: collapse;
+}
+.paycheck{
+    background-image: url('./img/Eva\ UPrO.png');
+    background-position:bottom; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */ 
+    
+}
+.header{
+    background: linear-gradient(to right, rgba(135,34,140,1) 40%, rgba(254,8,109,1) 85%);
+    color: white;
+    text-align: center;
+}
+
+.header-img{
+    width:100px;
+}
+
+.header-data{
+    font-size: 12px;
+}
+.header-img{
+    padding:0 30px;
+}
+
+.title-liquidacion{
+    text-align: center;
+    font-size: 18px;
+    padding:5px 0;
+}
+.detail-table td{
+    border-right: 1px solid gray;
+}
+.title-table-personal{
+    width: 100%;
+}
+.detail-table-th-title{
+    border: 1px solid gray;
+}
+.detail-table-total{
+    border-right: 1px solid gray;
+    text-align: right;
+}
+.tr-total{
+    height: 80px;
+    vertical-align: bottom;
+}
+.detail-tr{
+    border: 1px solid gray;
+}
+.title-table-personal{
+    border-collapse: collapse;
+    border: 1px solid gray;
+}
+.td-firma{
+    padding-left: 5px;
+
+}
+#firma{
+    width: 150px;
+}
+#sello{
+    width: 150px;
+}
+.monto{
+    text-align: right;
+    padding-right: 10px;
+}
