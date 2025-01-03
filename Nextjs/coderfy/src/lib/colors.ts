@@ -1,8 +1,8 @@
 export const colors = {
     red: { accent: "#da2735", dark: "#7f1d1d" },
-    orange: { accent: "#cc5400", dark: "#7c2d12" },
-    yellow: { accent: "#ffae00", dark: "#78350f" },
-    green: { accent: "#21c872", dark: "#14532d" },
+    orange: { accent: "orange", dark: "#7c2d12" },
+    yellow: { accent: "orange", dark: "#78350f" },
+    green: { accent: "green", dark: "#14532d" },
     teal: { accent: "#2ee9d7", dark: "#134e4a" },
     blue: { accent: "#1e3a8a", dark: "#1e3a8a" },
     indigo: { accent: "#394bd5", dark: "#312e81" },
