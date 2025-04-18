@@ -8,7 +8,7 @@ const Navbar = () => {
         </div>
         <div className="flex items-center gap-4">
             <Link href="/auth/login">Login</Link>
-            <Link href="/register">Register</Link>
+            <Link href="/auth/register">Register</Link>
         </div>
     </div>
   )
