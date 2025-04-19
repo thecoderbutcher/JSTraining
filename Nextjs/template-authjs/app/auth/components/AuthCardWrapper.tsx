@@ -10,15 +10,15 @@ interface AuthCardWrapperProps {
 }
 const AuthCardWrapper = ({children, headerLabel, backButtonLabel, backButtonLink, showSocial}: AuthCardWrapperProps) => {
   return (
-    <div className="w-[400px] shadow-md">
-        <header>
+    <div className="flex flex-col gap-4 space-y-4 p-4 w-[400px] shadow-md">
+        <header className="text-sm text-gray-400 text-center">
             {headerLabel}
         </header>
-        <main>
+        <main className="flex flex-col space-y-6">
             {children}
         </main>
         {showSocial && <SocialLogin />}
-        <footer>
+        <footer className="text-sm text-gray-600 text-center">
             <Link href={backButtonLink}>{backButtonLabel}</Link>
         </footer>
     </div>
