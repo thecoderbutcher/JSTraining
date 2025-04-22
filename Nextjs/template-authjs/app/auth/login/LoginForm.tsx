@@ -2,7 +2,7 @@
 import * as z from "zod"
 import { useForm } from "react-hook-form"
 import { zodResolver }from "@hookform/resolvers/zod"
-import { RegisterSchema } from "@/schemas"
+import { LoginSchema } from "@/schemas"
 import { useSearchParams } from "next/navigation"
 import { useState, useTransition } from "react"
 
@@ -19,15 +19,15 @@ const LoginForm = () => {
   const [success, setSuccess] = useState<string | undefined>('')
   const [isPending, startTransition] = useTransition()
 
-  const {register, handleSubmit, formState:{errors, isSubmitting}} = useForm<z.infer<typeof RegisterSchema>>({
-    resolver: zodResolver(RegisterSchema),
+  const {register, handleSubmit, formState:{errors, isSubmitting}} = useForm<z.infer<typeof LoginSchema>>({
+    resolver: zodResolver(LoginSchema),
     defaultValues: {
       email: "",
       password: ""
     }
   })
 
-  const onSubmit = (values: z.infer<typeof RegisterSchema>) => {
+  const onSubmit = (values: z.infer<typeof LoginSchema>) => {
     setError('')
     setSuccess('')
 
@@ -51,8 +51,7 @@ const LoginForm = () => {
               name="email"
               disabled={isSubmitting}
               placeholder="example@mail.com" />
-              {errors.email && (<p className="text-sm text-red-500">{errors.email.message}</p>
-        )}
+              {errors.email && ( <p className="text-sm text-red-500">{errors.email.message}</p> )}
         </div>
         <div className="flex flex-col gap-2">
             <label htmlFor="password">Password</label>
@@ -62,8 +61,7 @@ const LoginForm = () => {
               disabled={isSubmitting}
               name="password" 
               placeholder="********" />
-              {errors.password && (
-              <p className="text-sm text-red-500">{errors.password.message}</p>)}
+              {errors.password && ( <p className="text-sm text-red-500">{errors.password.message}</p> )}
         </div> 
         <div className="flex w-auto">
             <button 
