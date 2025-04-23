@@ -6,10 +6,10 @@ import { RegisterSchema } from "@/schemas"
 import { useSearchParams } from "next/navigation"
 import { useState, useTransition } from "react"
  
-import AuthCardWrapper from "../../components/AuthCardWrapper"
-import FormError from "../../components/FormError"
-import FormSuccess from "../../components/FormSuccess"
-import { registerAction } from "../../actions/register"
+import AuthCardWrapper from "../../../components/AuthCardWrapper"
+import FormError from "../../../components/FormError"
+import FormSuccess from "../../../components/FormSuccess"
+import { registerAction } from "../../../actions/register"
 
 
 const RegisterForm = () => {

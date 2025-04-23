@@ -6,10 +6,10 @@ import { LoginSchema } from "@/schemas"
 import { useSearchParams } from "next/navigation"
 import { useState, useTransition } from "react"
 
-import AuthCardWrapper from "../components/AuthCardWrapper" 
-import FormError from "../components/FormError"
-import FormSuccess from "../components/FormSuccess"
-import { login } from "../actions/login"
+import AuthCardWrapper from "../../components/AuthCardWrapper" 
+import FormError from "../../components/FormError"
+import FormSuccess from "../../components/FormSuccess"
+import { login } from "../../actions/login"
 
 const LoginForm = () => {
   const searchParams = useSearchParams()
