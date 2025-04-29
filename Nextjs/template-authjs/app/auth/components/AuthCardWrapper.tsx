@@ -10,7 +10,7 @@ interface AuthCardWrapperProps {
 }
 const AuthCardWrapper = ({children, headerLabel, backButtonLabel, backButtonLink, showSocial}: AuthCardWrapperProps) => {
   return (
-    <div className="flex flex-col gap-4 space-y-4 p-4 w-[400px] shadow-md rounded-md bg-white mt-12 lg:mt-24 h-full">
+    <div className="flex flex-col gap-4 space-y-4 p-4 w-[400px] shadow-md rounded-md bg-white ">
         <header className="text-sm text-gray-400 text-center pt-2">
             <h2 className="text-gray-700 font-bold text-2xl py-2 ">🔐 App Name</h2>
             <p>{headerLabel}</p>
