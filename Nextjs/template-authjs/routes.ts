@@ -7,6 +7,8 @@ export const publicRoutes = [
     '/admin',
     '/admin/loans',
     '/admin/clients',
+    '/admin/clients/client',
+    '/admin/clients/addclient',
     '/admin/profile',
     '/auth/new-verification',
 ]
