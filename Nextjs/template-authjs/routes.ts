@@ -9,6 +9,7 @@ export const publicRoutes = [
     '/admin/clients',
     '/admin/clients/client',
     '/admin/clients/addclient',
+    '/admin/loans/quotas',
     '/admin/profile',
     '/auth/new-verification',
 ]

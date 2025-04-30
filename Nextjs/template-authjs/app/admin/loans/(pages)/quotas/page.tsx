@@ -1,9 +1,10 @@
-import Header from "../components/Header"
+import Header from "./components/Header"
 
 const page = () => {
   return (
     <div className="flex flex-col w-full">
-      <Header title="Perfil" url="/admin" />
+      <Header />
+      
     </div>
   )
 }

@@ -1,11 +1,11 @@
+import Header from "@/app/admin/components/Header"
 import AddClientForm from "./components/AddClientForm"
-import Header from "./components/Header"
 
 
 const page = () => {
   return (
-    <div className="w-full">
-      <Header /> 
+    <div className="flex flex-col w-full gap-4">
+      <Header title="Agregar Cliente" url="/admin/clients" /> 
       <AddClientForm />
     </div>
   )

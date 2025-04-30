@@ -4,7 +4,7 @@ import React from 'react'
 
 const AddClientForm = () => {
   return (
-    <form className='flex flex-col gap-4 bg-white p-4 mx-auto items-center justify-center '>
+    <form className='flex flex-col gap-4 p-4 bg-neutral shadow-md items-center'>
         <div className='flex items-center justify-center'>
             <Image src={'/default-user.webp'} width={40} height={40} alt='userphoto'/>
             <input type="file" name="" id="" />
