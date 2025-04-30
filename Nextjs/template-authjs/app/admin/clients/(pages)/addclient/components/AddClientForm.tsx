@@ -25,9 +25,9 @@ const AddClientForm = () => {
             <input type="text" placeholder='Notas' />
         </div>
         <div className='flex gap-8 items-center '>
-            <button  className='bg-black text-white px-2 py-1 rounded-lg'>
+            <Link href={'/admin/auth/error'}  className='bg-black text-white px-2 py-1 rounded-lg'>
                 Guardar
-            </button>
+            </Link>
             <Link href={'/admin/clients'} className='bg-gray-400 text-white px-2 py-1 rounded-lg'>
                 Cancelar
             </Link>
